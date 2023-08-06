@@ -32,7 +32,7 @@ header nav ul {
     width: fit-content;
 }
 header nav ul li {
-    display: inline-block;
+    display: block;
     float: left;
     list-style: none;
     padding: 0 16px;
@@ -150,12 +150,7 @@ header .header-cases {
         background-color: #f2f2f2;
         float: left;
     }
-    .index-boxlink-square {
-        width: calc(25% - 20px) !important;
-    }
-    .index-boxlink-rectangle {
-        width: calc(50% - 20px) !important;
-    }
+    
     .index-links div h3 {
         line-height: 230px;
     }
@@ -164,13 +159,32 @@ header .header-cases {
         transition: 0.5s;
     }
 }  
-/* CASES */
-.cases-links .wrapper div{
-    float: left;
-    width: 240px;
-    height: 250px;
-    margin: 10px 5px 0px;
-    background-color: #e3e3e3;
+
+/* CONTENT */
+
+.wrapper .picsAndText{
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  border-radius: 0.5%;;
+  background-color: #e3e3e3;
+}
+.wrapper .picsAndText img{
+  height: 450px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 0.5%;
+}
+.wrapper .picsAndText h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.wrapper .picsAndText p{
+  flex-wrap: wrap;
+  font-family: poppins;
+  font-size: 20px;
+  padding-right: 20px;
+  line-height: 25px;
 }
 
 /*FOOTER*/
@@ -190,7 +204,7 @@ footer ul {
 
 }
 footer ul li{
-    display: inline-blocki;
+    display: block;
     list-style: none; 
 }
 footer ul li a{
@@ -226,3 +240,4 @@ footer ul li a{
         text-transform: uppercase;
     }
 }
+/* Footer Ends */
