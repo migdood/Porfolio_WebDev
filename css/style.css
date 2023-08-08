@@ -161,13 +161,16 @@ header nav ul li a{
 }
 
 .heroimg-container{
+    border: 1px solid blue;
     border-radius: 5px;
     overflow:hidden;
-    width: 131.40%;
+    width: 129.6%;
     margin: auto;
+    object-fit: cover;
 }
 
 .hero img {
+    border: 1px solid red;
     display: block;
     border-radius: 5px;
     height: 300px;
