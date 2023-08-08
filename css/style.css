@@ -134,6 +134,7 @@ header nav ul li a{
     border-radius: 10px;
     border: none;
     margin-top: 30px;
+    transition: 0.5s ease-in-out;
     animation: 2s ease-out 0s buttonAppear;
 }
 
@@ -156,7 +157,6 @@ header nav ul li a{
 }
 
 .hero button:hover{
-    transition: 0.5s;
     transform: scale(1.3);
 }
 
@@ -317,10 +317,9 @@ header nav ul li a{
     background-color: #3882f6;
     border: 3px solid white;
     border-radius: 9px;
-
+    transition: 0.5s ease;
 }
 .signup button:hover{
-    transition: 0.5s;
     transform: scale(1.3);
 }
 /*SIGN UP END*/
