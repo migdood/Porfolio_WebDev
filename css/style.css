@@ -121,7 +121,7 @@ header nav ul li a{
     animation: 1s ease-out 0s slideFromLeft;
 }
 
-.text-button, img{
+.text-button, .heroimg-container{
     margin-top: 60px;
 }
 
@@ -161,12 +161,14 @@ header nav ul li a{
 }
 
 .heroimg-container{
+    border-radius: 5px;
     overflow:hidden;
-    height:auto;
-    width: 130%;
+    width: 131.40%;
+    margin: auto;
 }
 
 .hero img {
+    display: block;
     border-radius: 5px;
     height: 300px;
     width: auto;
@@ -175,7 +177,7 @@ header nav ul li a{
 }
 
 .heroimg-container:hover img{
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
 
 @keyframes slideFromTop {
@@ -198,16 +200,16 @@ header nav ul li a{
     font-size: 60px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 .profile-pictures {
+    border: px solid green;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-
     width: 1250px;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -249,8 +251,7 @@ header nav ul li a{
 }
 
 .profile-container h1{
-    margin-top: 40px;
-    margin-bottom: -30px;
+    padding: 20px 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -269,12 +270,12 @@ header nav ul li a{
     border: 1px solid #e5e7eb;
     background-color: #e5e7eb;
     height: 900px;
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
-
 }
 
 .quotes p {
+    width: 1250px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
