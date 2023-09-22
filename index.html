@@ -1,130 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-	<title>Justice League</title>
-</head>
+    <script src="js/javascript.js" defer></script>
 
-<body>
-	<div class="header-cover">
+    <title>Justice League</title>
+  </head>
 
-		<header>
-			<a href="index.html" class="header-logo">Almigdad</a>
-			<nav>
-				<ul>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">About me</a></li>
-					<li><a href="">Contacts</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-	<div class="hero-cover">
-		<div class="hero">
+  <body>
+    <div class="header-cover">
+      <header>
+        <a href="index.html" class="header-logo">Almigdad</a>
+        <nav>
+          <ul>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="hero-cover">
+      <div class="hero">
+        <div class="text-button">
+          <h2 class="hero-maintext">The Justice League Cooperation</h2>
 
-			<div class="text-button">
-				<h2 class="hero-maintext">The Justice League Cooperation</h2>
+          <h1 class="hero-subtext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at
+            fringilla nibh. Morbi a efficitur tellus. Praesent ac nulla
+            vulputate, efficitur lectus quis, tempus felis. Nunc elementum,
+            turpis fringilla lobortis ornare, arcu ex porta elit, id maximus
+            felis nisi sed dolor.
+          </h1>
 
-				<h1 class="hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at fringilla
-					nibh. Morbi a efficitur tellus. Praesent ac nulla vulputate, efficitur lectus quis, tempus felis.
-					Nunc elementum, turpis fringilla lobortis ornare, arcu ex porta elit, id maximus felis nisi sed
-					dolor.</h1>
+          <button class="hero-button">Sign up</button>
+        </div>
+        <div class="heroimg-container">
+          <img
+            id="heroImageID"
+            src="img/justice-league.jpg"
+            alt="the justice league"
+          />
+        </div>
+      </div>
+    </div>
 
-				<button class="hero-button">Sign up</button>
+    <main>
+      <h1 id="title">The Heroes</h1>
+      <div class="profile-pictures">
+        <span class="profile-container superman-profileimg">
+          <h1>Superman</h1>
+          <img src="img/superman-profile.jpg" alt="superman's profile" />
+          <p class="profile-description">
+            The Man of Steel with superhuman powers, fighting for truth and
+            justice.
+          </p>
+        </span>
+        <span class="profile-container">
+          <h1>Batman</h1>
 
-			</div>
-			<div class="heroimg-container">
-				<img id="heroImageID" src="img/justice-league.jpg" alt="the justice league">
-			</div>
+          <img src="img/batman-profile.jpg" alt="superman's profile" />
 
-		</div>
-	</div>
+          <p class="profile-description">
+            The Dark Knight, a vigilante detective using his intellect and tools
+            to combat crime.
+          </p>
+        </span>
+        <span class="profile-container">
+          <h1>Aquaman</h1>
+          <img src="img/aquaman-profile.jpg" alt="superman's profile" />
+          <p class="profile-description">
+            King of Atlantis, possessing aquatic abilities and defending the
+            oceans.
+          </p>
+        </span>
+        <span class="profile-container">
+          <h1>The Flash</h1>
+          <img src="img/flash-profile.webp" alt="the flash's profile" />
+          <p class="profile-description">
+            The Scarlet Speedster, endowed with super speed and protecting
+            Central City.
+          </p>
+        </span>
+        <span class="profile-container">
+          <h1>Wonder Woman</h1>
 
-	<main>
-		<h1 id="title"> The Heroes</h1>
-			<div class="profile-pictures">
-				<span class="profile-container superman-profileimg">
-					<h1>Superman</h1>
-					<img src="img/superman-profile.jpg" alt="superman's profile">
-					<p class="profile-description">The Man of Steel with superhuman powers, fighting for truth and
-						justice.</p>
-				</span>
-				<span class="profile-container">
-					
-					<h1>Batman</h1>
-
-					<img src="img/batman-profile.jpg" alt="superman's profile">
-
-					<p class="profile-description">The Dark Knight, a vigilante detective using his intellect and
-						tools to combat crime.</p>
-				</span>
-				<span class="profile-container">
-					<h1>Aquaman</h1>
-					<img src="img/aquaman-profile.jpg" alt="superman's profile">
-					<p class="profile-description">King of Atlantis, possessing aquatic abilities and defending the
-						oceans.</p>
-				</span>
-				<span class="profile-container">
-					<h1>The Flash</h1>
-					<img src="img/flash-profile.webp" alt="the flash's profile">
-					<p class="profile-description">The Scarlet Speedster, endowed with super speed and protecting
-						Central City.</p>
-				</span>
-				<span class="profile-container">
-					<h1>Wonder Woman</h1>
-
-					<img src="img/wonderwoman-profile.jpg" alt="wonder woman's profile">
-					<p class="profile-description">Amazonian warrior princess, wielding strength and wisdom to defend
-						the world.</p>
-				</span>
-				<span class="profile-container cyborg-profileimg">
-					<h1>Cyborg</h1>
-					<img src="img/cyborg-profile.webp" alt="superman's profile">
-					<p class="profile-description">Half-man, half-machine, a powerful hero with advanced technology
-						integrated into his body.
-					</p>
-				</span>
-			</div>
-		<div class="quotes">
-			<div class="quote">
-				<p>"I'm here to fight for truth, justice, and the American way." - Superman</p>
-			</div>
-			<div class="quote">
-				<p>"I'm not afraid; I'm angry." - Batman</p>
-			</div>
-			<div class="quote">
-				<p> "A strong man is strongest alone." - Aquaman</p>
-			</div>
-			<div class="quote">
-				<p>"Life is locomotion. If you're not moving, you're not living." - Flash</p>
-			</div>
-			<div class="quote">
-				<p>"I will fight for those who cannot fight for themselves." - Wonder Woman</p>
-			</div>
-			<div class="quote">
-				<p>"Sometimes machines can tell you more about humanity than people can." - Cyborg</p>
-			</div>
-		</div>
-		<div class="signup">
-			<div class="signup-text">
-				<h1>Call to action! It's time!</h1>
-				<p>Sign up if you wish to receive updates of the heroes' actions and accomplishments!</p>
-			</div>
-			<button class="signup-button">Sign up</button>
-		</div>
-	</main>
-		<script src="js/javascript.js"></script>
-</body>
-<footer>
-	<p class="copyright">
-		<strong>Copyright © </strong> Almigdad 2023
-	</p>
-</footer>
-
+          <img src="img/wonderwoman-profile.jpg" alt="wonder woman's profile" />
+          <p class="profile-description">
+            Amazonian warrior princess, wielding strength and wisdom to defend
+            the world.
+          </p>
+        </span>
+        <span class="profile-container cyborg-profileimg">
+          <h1>Cyborg</h1>
+          <img src="img/cyborg-profile.webp" alt="superman's profile" />
+          <p class="profile-description">
+            Half-man, half-machine, a powerful hero with advanced technology
+            integrated into his body.
+          </p>
+        </span>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <p>
+            "I'm here to fight for truth, justice, and the American way." -
+            Superman
+          </p>
+        </div>
+        <div class="quote">
+          <p>"I'm not afraid; I'm angry." - Batman</p>
+        </div>
+        <div class="quote">
+          <p>"A strong man is strongest alone." - Aquaman</p>
+        </div>
+        <div class="quote">
+          <p>
+            "Life is locomotion. If you're not moving, you're not living." -
+            Flash
+          </p>
+        </div>
+        <div class="quote">
+          <p>
+            "I will fight for those who cannot fight for themselves." - Wonder
+            Woman
+          </p>
+        </div>
+        <div class="quote">
+          <p>
+            "Sometimes machines can tell you more about humanity than people
+            can." - Cyborg
+          </p>
+        </div>
+      </div>
+      <div class="signup">
+        <div class="signup-text">
+          <h1>Call to action! It's time!</h1>
+          <p>
+            Sign up if you wish to receive updates of the heroes' actions and
+            accomplishments!
+          </p>
+        </div>
+        <button class="signup-button">Sign up</button>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <p class="copyright"><strong>Copyright © </strong> Almigdad 2023</p>
+  </footer>
 </html>
