@@ -1,76 +1,75 @@
 * {
-    text-decoration: none;
+  text-decoration: none;
 }
-
+body {
+    font-family: "Roboto", sans-serif;
+}
 /*HEADER NAV*/
 
 .header-cover {
-    background-color: #1F2937;
+  background-color: #1f2937;
 }
 
 header {
-    display: flex;
-    background-color: #1F2937;
-    width: 100%;
-    height: 50px;
+  display: flex;
+  background-color: #1f2937;
+  width: 100%;
+  height: 50px;
 }
 
 header .header-logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    color: #f9faf8;
-    text-transform: uppercase;
-    padding: 10px 10px;
-    
+  font-size: 24px;
+  font-weight: 900;
+  color: #f9faf8;
+  text-transform: uppercase;
+  padding: 10px 10px;
 }
-header .header-logo:hover{
-    animation: colorchange  2s ease-out infinite;
+header .header-logo:hover {
+  animation: colorchange 2s ease-out infinite;
 }
-@keyframes colorchange{
-    0%{
-        color: #3882f6;
-    }
-    30%{
-        color: seagreen;
-    }
-    60%{
-        color: goldenrod;
-    }
-    100%{
-        color: #3882f6;
-    }
+@keyframes colorchange {
+  0% {
+    color: #3882f6;
+  }
+  30% {
+    color: seagreen;
+  }
+  60% {
+    color: goldenrod;
+  }
+  100% {
+    color: #3882f6;
+  }
 }
-.header-logo nav{
-    width: 1250px;
-    margin: 0 auto;
+.header-logo nav {
+  width: 1250px;
+  margin: 0 auto;
 }
 
-header{
-    width: 1250px;
-    margin: 0 auto;
-    padding-top: 10px;
+header {
+  width: 1250px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 header nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 header nav ul {
-    display: flex;
-    width: fit-content;
+  display: flex;
+  width: fit-content;
 }
 
 header nav ul li {
-    list-style: none;
-    padding: 15px 16px;
+  list-style: none;
+  padding: 15px 16px;
 }
 
-header nav ul li a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #f9faf8;
-    text-transform: uppercase;
+header nav ul li a {
+  font-size: 18px;
+  color: #f9faf8;
+  text-transform: uppercase;
 }
 
 /*HEADER NAV END*/
@@ -78,184 +77,182 @@ header nav ul li a{
 /*HERO*/
 
 .hero-cover {
-    background-color: #1F2937;
+  background-color: #1f2937;
 }
 
 .hero {
-    display: flex;
-    gap: 30px;
-    font-family: 'Roboto', sans-serif;
-    height: 450px;
-    width: 1250px;
-    margin: 0 auto;
+  display: flex;
+  gap: 30px;
+
+  height: 450px;
+  width: 1250px;
+  margin: 0 auto;
 }
 
 .hero-maintext {
-    color: #f9faf8;
-    font-size: 48px;
-    font-weight: 700;
-    animation: 1s ease-out 0s slideFromLeft;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 700;
+  animation: 1s ease-out 0s slideFromLeft;
 }
 
 @keyframes slideFromLeft {
-    0%{
-        opacity: 0%;
-        transform: translateX(-100%);
-    }
-    50%{
-        opacity: 0%;
-        transform: translateX(-100%);
-    }
-    100%{
-        opacity: 100%;
-        transform: translateX(0%)
-    }
+  0% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
 }
 
-.hero-subtext{
-    line-height: 25px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 100;
-    color: #e5e7eb;
-    animation: 1s ease-out 0s slideFromLeft;
+.hero-subtext {
+  line-height: 25px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #e5e7eb;
+  animation: 1s ease-out 0s slideFromLeft;
 }
 
-.text-button, .heroimg-container{
-    margin-top: 60px;
+.text-button,
+.heroimg-container {
+  margin-top: 60px;
 }
 
-.hero .text-button button{
-    font-size: 20px;
-    color: #e5e7eb;
-    background-color: #3882f6;
-    height: 50px;
-    width: 138px;
-    border-radius: 10px;
-    border: none;
-    margin-top: 30px;
-    transition: 0.5s ease-in-out;
-    animation: 2s ease-out 0s buttonAppear;
+.hero > .text-button > button {
+  font-size: 20px;
+  color: #e5e7eb;
+  background-color: #3882f6;
+  height: 50px;
+  width: 138px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+  transition: 0.1s ease-in-out;
+  animation: 2s ease-out 0s buttonAppear;
 }
 
-@keyframes buttonAppear{
-    0%{
-        opacity: 0%;
-        
-    }
-    70%{
-        opacity: 0%;
-    }
-    90% {
-        transition: 0.5s;
-        transform: scale(1.3);
-
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
-.hero button:hover{
+@keyframes buttonAppear {
+  0% {
+    opacity: 0%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  90% {
+    transition: 0.5s;
     transform: scale(1.3);
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
-.heroimg-container{
-    border-radius: 5px;
-    overflow:hidden;
-    width: 129.6%;
-    margin: auto;
-    object-fit: cover;
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+.heroimg-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 129.6%;
+  margin: auto;
+  object-fit: cover;
 }
 
 #heroImageID {
-    display: block;
-    border-radius: 5px;
-    height: 0px;
-    width: auto;
-    transition: transform .5s ease;
-    animation: 0.5s ease-out 0s slideFromTop;
+  display: block;
+  border-radius: 5px;
+  height: 0px;
+  width: auto;
+  transition: transform 0.5s ease;
+  animation: 0.5s ease-out 0s slideFromTop;
 }
 
-.heroimg-container:hover img{
-    transform: scale(1.04);
+.heroimg-container:hover img {
+  transform: scale(1.04);
 }
 
 @keyframes slideFromTop {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-100%);
+    opacity: 0%;
   }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
 
 /*HERO END*/
 
 /*PROFILE*/
 
-#title{
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin: 100px 0;
+#title {
+  text-align: center;
+  font-size: 60px;
+
+  font-weight: 700;
+  margin: 100px 0;
 }
 
 .profile-pictures {
-    border: px solid green;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 1250px;
-    margin: 0 auto;
-    margin-bottom: 100px;
+  border: px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1250px;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .profile-container img {
-    border-radius: 10px;
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    object-position: center;
-    transition: transform.2s ease;
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform.2s ease;
+}
+.profile-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.profile-container img:hover + p {
+  transform: translateY(20px);
+}
 
-}
-.profile-container img:hover{
-    transform: scale(1.1);
-}
-.profile-container img:hover + p{
-    transform: translateY(20px);
-}
-
-.superman-profileimg img{
-    object-position: 73%;
+.superman-profileimg img {
+  object-position: 73%;
 }
 
 .cyborg-profileimg img {
-    
-    object-position: top;
+  object-position: top;
 }
 
 .profile-pictures .profile-container p {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    width: 250px;
-    margin-top: 2px;
-    transition: transform.2s ease;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  width: 250px;
+  margin-top: 2px;
+  transition: transform.2s ease;
 }
 
-.profile-container h1{
-    padding: 20px 0;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+.profile-container h1 {
+  padding: 20px 0;
+  text-align: center;
+
+  font-size: 30px;
 }
 
 /*PROFILES END*/
@@ -263,26 +260,26 @@ header nav ul li a{
 /*QUOTE*/
 
 .quotes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 80px;
-    align-items: center;
-    border: 1px solid #e5e7eb;
-    background-color: #e5e7eb;
-    height: 900px;
-    width: 99%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  background-color: #e5e7eb;
+  height: 900px;
+  width: 99%;
+  margin: 0 auto;
 }
 
 .quotes p {
-    width: 1250px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    font-weight: 100;
-    font-style: italic;
-    color: #1f2937;
+  width: 1250px;
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
 }
 
 /*QUOTE END*/
@@ -290,57 +287,56 @@ header nav ul li a{
 /*SIGN UP*/
 
 .signup {
-    font-family: 'Roboto', sans-serif;
-    border-radius: 6px;
-    height: 150px;
-    width: 1250px;
-    margin: 200px auto;
-    background-color: #3882f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  border-radius: 6px;
+  height: 150px;
+  width: 1250px;
+  margin: 200px auto;
+  background-color: #3882f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.signup-text{
-    line-height: 35px;
-    margin-right: 100px;
-    color: white;
-    font-size: 25px;
+.signup-text {
+  line-height: 35px;
+  margin-right: 100px;
+  color: white;
+  font-size: 25px;
 }
 .signup-button {
-    font-size: 20px;
-    font-weight: 550;
-    font-family: 'Roboto', sans-serif;
-    height: 60px;
-    width: 150px;
-    transition: 0.2s;
-    background: white;
-    border: 3px solid white;
-    border-radius: 10px;
+  font-size: 20px;
+  font-weight: 550;
+
+  height: 60px;
+  width: 150px;
+  transition: 0.2s;
+  background: white;
+  border: 3px solid white;
+  border-radius: 10px;
 }
 
 .signup-button:hover {
-background: #3882f6;
-color: white;
-font-size: 25px;
+  background: #3882f6;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
 }
 /*SIGN UP END*/
 
 /*FOOTER*/
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    background-color: #1f2937 ;
-    border: 0px;
-    height: 100px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  border: 0px;
+  height: 100px;
+  width: 100%;
 }
 
-footer .copyright{
-    font-size: 25px;
-    color: #f9faf8;
+footer .copyright {
+  font-size: 25px;
+  color: #f9faf8;
 }
 /*FOOTER END*/
